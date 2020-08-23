@@ -1,7 +1,7 @@
 const express = require('express')
 const helmet = require('helmet')
 
-const carsRouter = require('./carsRouter')
+//const carsRouter = require('./carsRouter')
 
 const server = express()
 
@@ -12,6 +12,6 @@ server.get('/', (req, res) => {
     res.send('<h1>Hello Everyone Welcome to Cookamunga</h1>')
 })
 
-server.use('./api/cars', carsRouter)
+//server.use('./api/cars', carsRouter)
 
 module.exports = server
